@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>299-maktab Tablink</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #fd5949 0%, #d6249f 50%, #285AEB 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      padding: 30px 20px;
+      border-radius: 25px;
+      text-align: center;
+      width: 100%;
+      max-width: 380px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      backdrop-filter: blur(8px);
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    h1 {
+      margin: 0 0 25px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    /* 🔘 Yangi tugma uslubi */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 14px 0;
+      margin: 12px 0;
+      text-decoration: none;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
+      border-radius: 50px;                 /* yumaloq kapsula */
+      background: linear-gradient(135deg,#e1306c,#fd5949);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    /* Hover animatsiya – biroz nur */
+    .btn::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: rgba(255,255,255,0.15);
+      transform: rotate(45deg);
+      transition: 0.3s;
+      opacity: 0;
+    }
+    .btn:hover::before {
+      left: -40%;
+      opacity: 1;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+    }
+
+    .btn i { font-size: 20px; }
+
+    /* Telegram tugmasi */
+    .btn-telegram {
+      background: linear-gradient(135deg,#37aee2,#1e96c8);
+    }
+
+    /* Instagram tugmasi */
+    .btn-instagram {
+      background: linear-gradient(135deg,#f58529,#d6249f,#285AEB);
+    }
+
+    /* Aloqa tugmasi */
+    .btn-contact {
+      background: linear-gradient(135deg,#43cea2,#185a9d);
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 25px 15px; }
+      .btn { font-size: 16px; padding: 12px 0; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img class="logo" src="./image.png" alt="299-maktab logo">
+    <h1>299-Maktab</h1>
+
+    <a class="btn btn-instagram" href="https://www.instagram.com/299.maktab/?__pwa=1" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a class="btn btn-telegram" href="https://t.me/jamilbek" target="_blank">
+      <i class="fab fa-telegram-plane"></i> Telegram
+    </a>
+
+  <a class="btn btn-contact" href="tel:+998943134050">
+    <i class="fas fa-phone"></i> Biz bilan bog‘lanish
+  </a>
+
+  </div>
+
+</body>
+</html>
